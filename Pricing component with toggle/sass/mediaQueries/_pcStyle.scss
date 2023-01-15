@@ -1,0 +1,23 @@
+@media (min-width: 1200px) {
+    .container {
+      .header {
+        width: 60%;
+        .changeSub {
+          width: 40%;
+        }
+      }
+      .box-info {
+        padding: 1rem;
+        .basic {
+          margin: 0rem;
+        }
+        .professional {
+          height: 30rem;
+          margin: 0rem;
+        }
+        .master {
+          margin: 0rem;
+        }
+      }
+    }
+  }

@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+/*Colors*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  background-color: hsl(240deg, 78%, 98%);
+}
+.container .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: hsl(233deg, 13%, 49%);
+  margin: 2.5rem auto;
+}
+.container .header .tittle {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 20rem;
+}
+.container .header .changeSub {
+  width: 15rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  color: hsl(234deg, 14%, 74%);
+}
+.container .header .changeSub p {
+  margin: auto 0;
+}
+.container .header .changeSub .btngroup {
+  width: 5rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, hsl(236deg, 72%, 79%) 20%, hsl(237deg, 63%, 64%) 90%);
+}
+.container .header .changeSub .btngroup #btnAnual {
+  background: transparent;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  transition: all .5s cubic-bezier(0.83, -0.27, 0.32, 1.27);
+  -webkit-transition: all .5s cubic-bezier(0.83, -0.27, 0.32, 1.27);
+  -moz-transition: all .5s cubic-bezier(0.83, -0.27, 0.32, 1.27);
+  -ms-transition: all .5s cubic-bezier(0.83, -0.27, 0.32, 1.27);
+  -o-transition: all .5s cubic-bezier(0.83, -0.27, 0.32, 1.27);
+}
+.container .header .changeSub .btngroup #btnMensual {
+  background: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  transition: all .5s cubic-bezier(0.83, -0.27, 0.32, 1.27);
+  -webkit-transition: all .5s cubic-bezier(0.83, -0.27, 0.32, 1.27);
+  -moz-transition: all .5s cubic-bezier(0.83, -0.27, 0.32, 1.27);
+  -ms-transition: all .5s cubic-bezier(0.83, -0.27, 0.32, 1.27);
+  -o-transition: all .5s cubic-bezier(0.83, -0.27, 0.32, 1.27);
+}
+.container .header .changeSub .btngroup :hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.container .box-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 95%;
+  margin: 0 auto 2rem;
+}
+.container .box-info .basic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 95%;
+  background: #fff;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.container .box-info .basic .b-tittle {
+  color: hsl(233deg, 13%, 49%);
+  font-weight: 700;
+  margin: 1rem;
+}
+.container .box-info .basic .price h2 {
+  font-size: 4rem;
+  color: hsl(232deg, 13%, 33%);
+}
+.container .box-info .basic .b-description {
+  width: 90%;
+  margin: 1rem;
+}
+.container .box-info .basic .b-description p {
+  text-align: center;
+  color: hsl(233deg, 13%, 49%);
+}
+.container .box-info .basic .btn {
+  width: 90%;
+  border: none;
+}
+.container .box-info .basic .btn button {
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, hsl(236deg, 72%, 79%) 20%, hsl(237deg, 63%, 64%) 90%);
+  color: #fff;
+  transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -ms-transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.container .box-info .basic .btn button:hover {
+  background: #fff;
+  color: hsl(233deg, 13%, 49%);
+  border: 1px solid hsl(233deg, 13%, 49%);
+}
+.container .box-info .professional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 95%;
+  background: linear-gradient(90deg, hsl(236deg, 72%, 79%) 20%, hsl(237deg, 63%, 64%) 90%);
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.container .box-info .professional .b-tittle {
+  color: #fff;
+  font-weight: 700;
+  margin: 1rem;
+}
+.container .box-info .professional .price h2 {
+  font-size: 4rem;
+  color: #fff;
+  
+}
+.container .box-info .professional .b-description {
+  width: 90%;
+  margin: 1rem;
+}
+.container .box-info .professional .b-description p {
+  text-align: center;
+  color: #fff;
+}
+.container .box-info .professional .btn {
+  width: 90%;
+  border: none;
+}
+.container .box-info .professional .btn button {
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  background: #fff;
+  color: hsl(236deg, 72%, 79%);
+  transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -ms-transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.container .box-info .professional .btn button:hover {
+  background: hsl(236deg, 72%, 79%);
+  color: #fff;
+  border: 1px solid #fff;
+}
+.container .box-info .master {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 95%;
+  background: #fff;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.container .box-info .master .b-tittle {
+  color: hsl(233deg, 13%, 49%);
+  font-weight: 700;
+  margin: 1rem;
+}
+.container .box-info .master .price h2 {
+  font-size: 4rem;
+  color: hsl(232deg, 13%, 33%);
+}
+.container .box-info .master .b-description {
+  width: 90%;
+  margin: 1rem;
+}
+.container .box-info .master .b-description p {
+  text-align: center;
+  color: hsl(233deg, 13%, 49%);
+}
+.container .box-info .master .btn {
+  width: 90%;
+  border: none;
+}
+.container .box-info .master .btn button {
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, hsl(236deg, 72%, 79%) 20%, hsl(237deg, 63%, 64%) 90%);
+  color: #fff;
+  transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -ms-transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.container .box-info .master .btn button:hover {
+  background: #fff;
+  color: hsl(233deg, 13%, 49%);
+  border: 1px solid hsl(233deg, 13%, 49%);
+}
+
+@media (min-width: 768px) {
+  .container .header {
+    width: 60%;
+  }
+  .container .header .changeSub {
+    width: 65%;
+  }
+  .container .box-info {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container .box-info .basic {
+    width: 20rem;
+    margin: 1rem;
+  }
+  .container .box-info .professional {
+    width: 20rem;
+    margin: 1rem;
+  }
+  .container .box-info .master {
+    width: 20rem;
+    margin: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container .header {
+    width: 60%;
+  }
+  .container .header .changeSub {
+    width: 40%;
+  }
+  .container .box-info {
+    padding: 1rem;
+  }
+  .container .box-info .basic {
+    margin: 0rem;
+  }
+  .container .box-info .professional {
+    height: 30rem;
+    margin: 0rem;
+  }
+  .container .box-info .master {
+    margin: 0rem;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

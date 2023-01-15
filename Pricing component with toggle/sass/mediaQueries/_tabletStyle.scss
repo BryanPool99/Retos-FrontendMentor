@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+    .container {
+      .header {
+        width: 60%;
+        .changeSub {
+          width: 65%;
+        }
+      }
+      .box-info {
+        width: 95%;
+        @include flex-box($D: row, $W: wrap);
+        .basic {
+          width: 20rem;
+          margin: 1rem;
+        }
+  
+        .professional {
+          width: 20rem;
+          margin: 1rem;
+        }
+        .master {
+          width: 20rem;
+          margin: 1rem;
+        }
+      }
+    }
+  }

@@ -1,0 +1,7 @@
+@mixin flex-box($D:column,$W:nowrap,$aI:center,$jC:center) {
+    display: flex;
+    flex-direction: $D;
+    align-items: $aI;
+    justify-content: $jC;
+    flex-wrap:$W;
+}
