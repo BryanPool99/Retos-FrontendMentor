@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
-.root {
+:root {
     --Darkcyan: hsl(158, 36%, 37%);
     --Cream: hsl(30, 38%, 92%);
     --Verydarkblue: hsl(212, 21%, 14%);
@@ -15,21 +15,128 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 .main{
-    width: 100vw;
-    border: 2px solid black;/*tmp*/
-    padding: 1rem;
+    padding: .5rem;
     min-height: 100vh;
+    background: var(--Cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card{
-    border: 2px solid rgb(194, 30, 30);/*tmp*/
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
 }
 .card .img{
-    width: 21rem;
+    width: 100%;
     height: 15rem;
     background: url(../Images/image-product-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.card .info{
+    background: var(--White);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.info .title,.info .description,.info .add{
+    padding: 1rem;
+    color: var(--Darkgrayishblue);
+}
+.info .title p{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+.info .title h1{
+    font-family: 'Fraunces', serif;
+    margin-top: 1rem;
+    color: var(--Verydarkblue);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.info .description p{
+    padding-right: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+.info .add .price{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.info .add .price h2{
+    color: var(--Darkcyan);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+.add .btn{
+    margin:0 auto;
+    width: 100%;
+}
+.btn button{
+    width: 100%;
+    background:var(--Darkcyan);
+    border: none;
+    padding: 1rem;
+    color: var(--White);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+.btn button:hover{
+    background: var(--Verydarkblue);
+}
+.btn button img{
+    margin-right: 1rem;
+}
+footer{
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .card{
+        display: flex;
+        justify-content: center;
+    }
+    .card .img{
+        width: 60%;
+        background: url(../Images/image-product-desktop.jpg);
+        height: 33rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: 2rem;
+    }
+    .card .info{
+        width: 40%;
+        border-bottom-left-radius: 0rem;
+        border-top-right-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
 }
