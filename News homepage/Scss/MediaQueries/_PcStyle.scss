@@ -1,0 +1,121 @@
+
+
+/*PARA PC*/
+@media (min-width: 1440px) {
+    .container {
+        width: 100vw;
+        padding: 5rem 10rem;
+        max-width: $W-Desktop;
+
+        header {
+            .logo {
+                margin: 1rem 0 0 1rem;
+            }
+
+            nav {
+                margin: 1rem 1rem 0 0;
+                cursor: auto;
+
+                .btn-menu {
+                    display: none;
+                }
+
+                ul {
+                    display: block;
+
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        margin: 0.9rem;
+                        cursor: pointer;
+                    }
+
+                    & :hover {
+                        color: $Soft-red;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+
+        section {
+            padding: 1rem;
+            margin: 0 0 2rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 0.5fr;
+            gap: 20px 40px;
+            grid-template-areas:
+                "img img aside"
+                "info info aside";
+
+            .img {
+                background-image: url("../assets/images/image-web-3-desktop.jpg");
+                grid-area: img;
+            }
+
+            .info {
+                grid-area: info;
+                display: flex;
+                height: 12rem;
+
+                .title {
+                    width: 17rem;
+                    margin: 0 4rem 0 0;
+                    font-size: 1.7rem;
+                }
+
+                .description {
+                    width: 24rem;
+
+                    p {
+                        margin: 0 0 2rem 0;
+                        line-height: 1.5rem;
+                    }
+
+                    button {
+                        color: $Off-white;
+                    }
+                }
+            }
+
+            aside {
+                margin: 0;
+                grid-area: aside;
+
+                h3 {
+                    color: $Off-white;
+                    margin: 1rem 0 2rem 1rem;
+                }
+
+                p {
+                    color: $Grayish-blue;
+                    margin: 0.5rem;
+                }
+            }
+        }
+
+        footer {
+            display: flex;
+            margin: 0 0 2rem 0;
+
+            .box {
+                @include flex-box($D: row, $W: wrap, $aI: center, $jC: center);
+                margin: 0 1rem 0 0;
+
+                .imgF {
+                    width: 25%;
+                    margin: 0 1rem 0 0;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .descriptionF {
+                    width: 69%;
+                }
+            }
+        }
+    }
+}

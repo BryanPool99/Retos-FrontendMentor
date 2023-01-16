@@ -1,0 +1,39 @@
+
+/*PARA TABLET*/
+@media (min-width: 768px) {
+  .container {
+    width: 100vw;
+    padding: 5rem 10rem;
+    max-width: $W-Desktop;
+
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.5fr 1fr;
+      gap: 20px 40px;
+      grid-template-areas:
+        "img info"
+        "aside aside";
+
+      .img {
+        grid-area: img;
+      }
+
+      .info {
+        grid-area: info;
+      }
+
+      aside {
+        grid-area: aside;
+      }
+    }
+
+    footer {
+      width: 100%;
+
+      .box {
+        margin: 2rem;
+      }
+    }
+  }
+}

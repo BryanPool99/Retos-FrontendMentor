@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+/*VARIABLES*/
+$Soft-orange: hsl(35, 77%, 62%);
+$Soft-red: hsl(5, 85%, 63%);
+$Off-white: hsl(36, 100%, 99%);
+$Grayish-blue: hsl(233, 8%, 79%);
+$Dark-grayish-blue: hsl(236, 13%, 42%);
+$Very-dark-blue: hsl(240, 100%, 5%);
+$font-family: "Inter", sans-serif;
+$W-Mobile: 375px;
+$W-Desktop: 1440px;
+
+@import "Flex/FlexBox";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*PARA MOBILE*/
+body {
+  font-family: $font-family;
+  @include flex-box();
+}
+
+.container {
+  width: 100vw;
+  @include flex-box();
+  max-width: $W-Mobile;
+  header {
+    width: 100%;
+    @include flex-box($D:row,$W:nowrap,$aI:center,$jC:space-between);
+    .logo {
+      margin: 1rem 0 0 1rem;
+    }
+
+    nav {
+      margin: 1rem 1rem 0 0;
+      .btn-menu {
+        cursor: pointer;
+        border: none;
+        width: 64px;
+        height: 32px;
+        background: url("../assets/images/icon-menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: ease-in 100ms;
+        -webkit-transition: ease-in 100ms;
+        -moz-transition: ease-in 100ms;
+        -ms-transition: ease-in 100ms;
+        -o-transition: ease-in 100ms;
+      }
+
+      .btn-menu.active {
+        background: url("../assets/images/icon-menu-close.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: ease-in 500ms;
+        -webkit-transition: ease-in 500ms;
+        -moz-transition: ease-in 500ms;
+        -ms-transition: ease-in 500ms;
+        -o-transition: ease-in 500ms;
+      }
+
+      ul {
+        display: none;
+        li {
+          list-style: none;
+          display: none;
+          margin: 0.9rem;
+          cursor: pointer;
+        }
+
+        & :hover {
+          color: $Soft-red;
+          font-weight: 800;
+        }
+      }
+
+    }
+    nav.active{
+      cursor: auto;
+      background-color:$Off-white;
+      margin: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 60vw;
+      height: 100vh;
+      @include flex-box($D:column,$W:nowrap,$aI:flex-start,$jC:normal);
+      transition: ease-in-out 500ms;
+      -webkit-transition: ease-in-out 500ms;
+      -moz-transition: ease-in-out 500ms;
+      -ms-transition: ease-in-out 500ms;
+      -o-transition: ease-in-out 500ms;
+      .btn-menu{
+        position: absolute;
+        right: 0;
+        margin: 1rem;
+        cursor: pointer;
+      }
+      ul {
+        display: block;
+        padding: 5rem 0 0;
+        li{
+          display: block;
+          padding: .5rem;
+        }
+      }
+    }
+  }
+  section {
+    padding: 1rem;
+    margin: 0 0 2rem 0;
+
+    .img {
+      @include flex-box($D:row,$W:nowrap,$aI:center,$jC:center);
+      background-image: url("../assets/images/image-web-3-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 19rem;
+      margin: 0 0 1rem 0;
+    }
+
+    .info {
+      text-align: left;
+
+      .title {
+        width: 11rem;
+        margin: 0 0 1rem 0;
+      }
+
+      .description {
+        p {
+          margin: 0 0 1rem 0;
+        }
+
+        button {
+          border: none;
+          width: 10rem;
+          height: 2rem;
+          border-radius: 0.2rem;
+          background-color: $Soft-red;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: 400;
+          letter-spacing: 0.2rem;
+          color: $Off-white;
+          cursor: pointer;
+          -webkit-border-radius: 0.2rem;
+          -moz-border-radius: 0.2rem;
+          -ms-border-radius: 0.2rem;
+          -o-border-radius: 0.2rem;
+
+          &:hover {
+            background-color: $Very-dark-blue;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+
+    aside {
+      @include flex-box($D:column,$W:nowrap,$aI:normal,$jC:normal);
+      /*display: flex;
+      flex-direction: column;*/
+      background-color: $Very-dark-blue;
+      margin: 2rem 0 0;
+
+      h2 {
+        color: $Soft-orange;
+        margin: 1rem 0 1rem 1rem;
+      }
+
+      hr {
+        margin: 1rem;
+      }
+
+      h3 {
+        color: $Off-white;
+        margin: 1rem 0 1rem 1rem;
+
+        &:hover {
+          cursor: pointer;
+          color: $Soft-orange;
+          font-weight: 700;
+        }
+      }
+
+      p {
+        color: $Grayish-blue;
+        margin: 1rem;
+      }
+    }
+  }
+  footer {
+    padding: 1rem;
+    width: 100%;
+
+    .box {
+      margin: .5rem;
+      @include flex-box($D:row,$W:wrap,$aI:center,$jC:center);
+
+      .imgF {
+        width: 25%;
+        margin: 0 1rem 0 0;
+        @include flex-box($D:row,$W:nowrap,$aI:center,$jC:center);
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .descriptionF {
+        width: 70%;
+
+        h2 {
+          color: $Grayish-blue;
+          margin: 0 0 0.5rem 0;
+        }
+
+        h3 {
+          margin: 0 0 0.5rem 0;
+
+          &:hover {
+            cursor: pointer;
+            color: $Soft-red;
+          }
+        }
+
+        p {
+          width: 95%;
+        }
+      }
+    }
+  }
+  .attribution {
+    @include flex-box($D:column,$W:nowrap,$aI:center,$jC:normal);
+    a {
+      color: $Very-dark-blue;
+    }
+  }
+}
+.container.active{
+  background-color:$Grayish-blue;
+}
+@import "MediaQueries/TabletStyle";
+@import "MediaQueries/PcStyle";
+
