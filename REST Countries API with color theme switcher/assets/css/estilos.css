@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+:root{
+    --DarkBlue:hsl(209, 23%, 22%);
+    --VeryDarkBlueDMBg : hsl(207, 26%, 17%);
+    --VeryDarkBlueLMtxt : hsl(200, 15%, 8%);
+    --DarkGray : hsl(0, 0%, 52%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    color: var(--White);
+    background: var(--VeryDarkBlueDMBg);
+    font-family: 'Nunito Sans', sans-serif;
+}
+body.light{
+    background: var(--VeryLightGray);
+}
+header{
+    background: var(--DarkBlue);
+    color: var(--White);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header.light{
+    background: var(--VeryLightGray);
+    color: var(--VeryDarkBlueLMtxt);
+}
+header .switch{
+    color: var(--White);
+    border: none;
+    font-weight: 600;
+}
+.switch.light{
+    background: var(--VeryLightGray);
+    color: var(--VeryDarkBlueLMtxt);
+}
+main{
+    background: var(--VeryDarkBlueDMBg);
+    padding: 2rem 4rem;
+}
+main.light{
+    background: var(--VeryLightGray);
+}
+main>div.row{
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 2rem;
+}
+.container-input{
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    background: var(--DarkBlue);
+    color: var(--White);
+    box-shadow: 0px 0px 1px 1px var(--DarkGray) inset;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.container-input.light{
+    background: var(--White);
+    color: var(--DarkGray);
+}
+.icon-search{
+    color: var(--White);
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.icon-search.light{
+    color: var(--DarkGray);
+}
+.container-input input,.container-input input:focus-visible{
+    color: var(--White);
+    border: none;
+    background: transparent;
+}
+.container-input input::placeholder{
+    color: var(--White);
+}
+.container-input.light input{
+    color: var(--DarkGray); 
+}
+.container-input.light input::placeholder{
+    color: var(--DarkGray);
+}
+.dropdown>button,.dropdown-menu{
+    background: var(--DarkBlue);
+    color: var(--White)!important;
+}
+.dropdown>button.light,.dropdown-menu.light{
+    background: var(--White);
+    color: var(--DarkBlue)!important;
+}
+.dropdown-menu button{
+    color: var(--White);
+}
+.dropdown-menu.light button{
+    color: var(--DarkGray);
+}
+.dropdown-menu.light button:hover{
+    background: var(--DarkBlue);
+    color: var(--White);
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section .card{
+    width: 18rem;
+    height: 20rem;
+    background: var(--DarkBlue);
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px var(--DarkBlue);
+}
+.card.light{
+    color: var(--VeryDarkBlueLMtxt);
+    background: var(--VeryLightGray);
+    box-shadow: 0px 0px 1px 1px var(--White);
+}
+.card-img-top{
+    height: 10rem;
+}
+.btnBack{
+    background: var(--DarkBlue);
+    color: var(--VeryLightGray);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 1px 1px var(--White);
+}
+.btnBack.light{
+    box-shadow: 0px 0px 1px 1px var(--DarkBlue);
+    background: var(--White);
+    color: var(--DarkBlue);
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+}
+.btnBack.light:hover{
+    background: var(--DarkBlue);
+    color: var(--VeryLightGray);
+}
+main section.light{
+    color: var(--DarkBlue);
+}
+@media (max-width: 576px) {
+    main{
+        padding: 2rem 1rem;
+    }
+}
+/*falta estilos del tema ligth*/
