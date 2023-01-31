@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST Countries API with color theme switcher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/perfil.jfif">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header class="p-md-4">
+        <h1 class=" fs-6 m-2 fw-bold">Where in the world?</h1>
+        <button class="btn m-2 btn-outline-dark switch">
+            <ion-icon class="icon-moon" name="moon"></ion-icon>
+            Dark Mode
+        </button>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 container-input">
+                <ion-icon  class="icon-search" name="search"></ion-icon>
+                <input type="text" id="search" class="form-control" placeholder="Search for a country..." aria-label="Search for a country...">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 mt-3 mt-sm-0 dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Filter By Region
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">All</button></li>
+                    <li><button class="dropdown-item" type="button">Africa</button></li>
+                    <li><button class="dropdown-item" type="button">Americas</button></li>
+                    <li><button class="dropdown-item" type="button">Asia</button></li>
+                    <li><button class="dropdown-item" type="button">Europe</button></li>
+                    <li><button class="dropdown-item" type="button">Oceania</button></li>
+                </ul>
+              </div>
+        </div>
+        <section class="row section">
+            <div class="card m-2 p-0" aria-hidden="true">
+                <img src="assets/img/placeholder.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12 name"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-12 population"></span><br>
+                    <span class="placeholder col-10 region"></span><br>
+                    <span class="placeholder col-8 capital"></span><br>
+                  </p>
+                </div>
+            </div>
+            <div class="card m-2 p-0" aria-hidden="true">
+                <img src="assets/img/placeholder.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12 name"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-12 population"></span><br>
+                    <span class="placeholder col-10 region"></span><br>
+                    <span class="placeholder col-8 capital"></span><br>
+                  </p>
+                </div>
+            </div>
+            <div class="card m-2 p-0" aria-hidden="true">
+                <img src="assets/img/placeholder.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12 name"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-12 population"></span><br>
+                    <span class="placeholder col-10 region"></span><br>
+                    <span class="placeholder col-8 capital"></span><br>
+                  </p>
+                </div>
+            </div>
+            <div class="card m-2 p-0" aria-hidden="true">
+                <img src="assets/img/placeholder.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12 name"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-12 population"></span><br>
+                    <span class="placeholder col-10 region"></span><br>
+                    <span class="placeholder col-8 capital"></span><br>
+                  </p>
+                </div>
+            </div>
+            <div class="card m-2 p-0" aria-hidden="true">
+                <img src="assets/img/placeholder.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12 name"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-12 population"></span><br>
+                    <span class="placeholder col-10 region"></span><br>
+                    <span class="placeholder col-8 capital"></span><br>
+                  </p>
+                </div>
+            </div>
+            <div class="card m-2 p-0" aria-hidden="true">
+                <img src="assets/img/placeholder.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12 name"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-12 population"></span><br>
+                    <span class="placeholder col-10 region"></span><br>
+                    <span class="placeholder col-8 capital"></span><br>
+                  </p>
+                </div>
+            </div>
+            <div class="card m-2 p-0" aria-hidden="true">
+                <img src="assets/img/placeholder.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12 name"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-12 population"></span><br>
+                    <span class="placeholder col-10 region"></span><br>
+                    <span class="placeholder col-8 capital"></span><br>
+                  </p>
+                </div>
+            </div>
+            <div class="card m-2 p-0" aria-hidden="true">
+                <img src="assets/img/placeholder.jpg" class="card-img-top" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12 name"></span>
+                  </h5>
+                  <p class="card-text placeholder-glow">
+                    <span class="placeholder col-12 population"></span><br>
+                    <span class="placeholder col-10 region"></span><br>
+                    <span class="placeholder col-8 capital"></span><br>
+                  </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="assets/js/LightMode.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/filter.js"></script>
+</body>
+</html>
