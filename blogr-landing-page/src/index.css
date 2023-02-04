@@ -1,0 +1,22 @@
+:root{
+    /*COLOR Primary*/
+    --LightredText: hsl(356, 100%, 66%);
+    --VerylightredHoverBG: hsl(355, 100%, 74%);
+    --VerydarkBlueHead: hsl(208, 49%, 24%);
+    /*COLOR Neutral*/
+    --WhiteTxt: hsl(0, 0%, 100%);
+    --GrayishBlueFootertxt: hsl(240, 2%, 79%);
+    --VerydarkGrayishBlue: hsl(207, 13%, 34%);
+    --VeryDarkBlackBlueFooterBG: hsl(240, 10%, 16%);
+    /*COLOR Gradient*/
+    --Verylightred: hsl(13, 100%, 72%);
+    --Lightred: hsl(353, 100%, 62%);
+    --Verydarkgrayblue: hsl(237, 17%, 21%);
+    --Verydarkdesaturatedblue: hsl(237, 23%, 32%);
+    /*Typography*/
+    --FontSizeBody: 16px;
+    /*
+        font-family: 'Overpass', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
+    */
+}
