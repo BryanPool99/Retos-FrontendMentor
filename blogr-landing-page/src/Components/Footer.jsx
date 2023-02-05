@@ -1,8 +1,13 @@
 import React from 'react';
+import logo from '../Images/logo.svg';
+import NavList from "./ComponentsHeader/NavList";
 const Footer=()=>{
     return (
         <footer>
-            esto es el Footer
+            <img src={logo} alt='logo' />
+            <div>
+                <NavList />
+            </div>
         </footer>
     )
 }
