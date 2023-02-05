@@ -8,7 +8,17 @@
 header{
     /*background:url("Images/bg-pattern-intro-desktop.svg");*/
     background-image: linear-gradient(90deg, var(--Verylightred), var(--Lightred));
-    border-bottom-left-radius: 2rem;
+    color: var(--WhiteTxt);
+    border-bottom-left-radius: 5rem;
     display: flex;
-    height: 20rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background: var(--VeryDarkBlackBlueFooterBG);
+    border-top-right-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
 }
