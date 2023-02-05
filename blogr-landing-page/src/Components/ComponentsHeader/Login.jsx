@@ -1,7 +1,7 @@
 import React from "react";
 const ContainerLogin =()=>{
     return(
-        <div>
+        <div className="container-btn">
             <button>Login</button>
             <button>Sign Up</button>
         </div>
