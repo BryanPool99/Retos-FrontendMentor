@@ -1,0 +1,156 @@
+.header{
+    border: 2px solid black;/*tmp*/
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0 0 0;
+}
+.container-Nav_Login{
+    border: 2px solid rgb(10, 177, 32);/*tmp*/
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    border: 2px solid rgb(177, 10, 10);/*tmp*/
+    display: flex;
+}
+nav p{
+    margin: 1rem;
+    cursor: pointer;
+}
+nav p:hover{
+    text-decoration: underline;
+}
+nav img{
+    padding: 0 .5rem;
+}
+ul{
+    border: 2px solid rgb(185, 172, 172);
+    /*tmp*/
+    display: none;
+    list-style: none;
+    /*display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    */
+    margin: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    background: var(--WhiteTxt);
+    color: var(--VerydarkBlueHead);
+}
+.Prodlist,.CompList,.ConnecList{
+    position: absolute;
+    top: 4rem;
+}
+.Prodlist{
+    left: 10%;
+}
+.CompList{
+    left: 20%;
+}
+.ConnecList{
+    left: 30%;
+}
+ul li{
+    margin: .2rem;
+    cursor: pointer;
+}
+ul li:hover{
+    font-weight: 700;
+}
+.iconMenu{
+    display: none;
+}
+.container-btn{
+    border: 2px solid rgb(24, 10, 177);/*tmp*/
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-btn button{
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    color: var(--WhiteTxt);
+    cursor: pointer;
+    width: 7rem;
+    font-weight: 800;
+    border-radius: 3rem;
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.container-btn button:nth-child(2){
+    color: var(--LightredText);
+    background: var(--WhiteTxt);
+}
+.container-btn button:nth-child(2):hover{
+    color: var(--WhiteTxt);
+    background: var(--VerylightredHoverBG);
+}
+.container-content{
+    border: 2px solid rgb(10, 177, 32);/*tmp*/
+    width: 70%;
+    margin: 4rem 0; 
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-content h1{
+    font-size: 4rem;
+}
+.container-content p{
+    margin: 1rem;
+}
+.container-btns{
+    border: 2px solid rgb(10, 35, 177);/*tmp*/
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 0 2rem 0;
+}
+.container-btns button{
+    padding: 1rem;
+    margin: .5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    color: var(--LightredText);
+    background: var(--WhiteTxt);
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.container-btns button:nth-child(1):hover{
+    color: var(--WhiteTxt);
+    background: var(--VerylightredHoverBG);
+}
+.container-btns button:nth-child(2){
+    background: transparent;
+    color: var(--WhiteTxt);
+    border: 1px solid var(--WhiteTxt);
+}
+.container-btns button:nth-child(2):hover{
+    color: var(--LightredText);
+    background: var(--WhiteTxt);
+    border: none;
+}
