@@ -4,9 +4,7 @@ import Main from "./Components/Main";
 const App=()=>{
     return(
         <div>
-            <Header
-                logo="logo"
-            />
+            <Header />
             <Main />
             <Footer />
         </div>
