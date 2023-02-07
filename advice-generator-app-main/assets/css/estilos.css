@@ -14,7 +14,7 @@ body{
     min-height: 100vh;
     font-family: var(--font);
 }
-main{
+header{
     background: var(--DarkGrayishBlue);
     max-width: 575px;
     width: 95%;
@@ -36,7 +36,7 @@ p{
     font-size: var(--quoteSize);
     text-align: center;
 }
-main figure{
+header figure{
     background-image: url(../img/pattern-divider-desktop.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -80,7 +80,7 @@ a:hover{
     color: var(--GrayishBlue);
 }
 @media (max-width: 510px) {
-    main figure{
+    header figure{
         background-image: url(../img/pattern-divider-mobile.svg);
         max-width: 295px;
         width: 295px;
@@ -90,7 +90,7 @@ a:hover{
     }
 }
 @media (max-width: 300px) {
-    main figure{
+    header figure{
         background-image: url(../img/pattern-divider-mobile.svg);
         max-width: 295px;
         width: 250px;
