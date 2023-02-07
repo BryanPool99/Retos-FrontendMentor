@@ -21,9 +21,9 @@ header{
 main{
     border: 2px solid black;/*tmp*/
 }
+
 footer{
     background: var(--VeryDarkBlackBlueFooterBG);
-    color: var(--GrayishBlueFootertxt);
     border-top-right-radius: 5rem;
     display: flex;
     align-items: center;

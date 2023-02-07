@@ -9,19 +9,19 @@ const NavList =()=>{
     return (
         <nav>
             {navTitle.map((e)=>
-                 <ul >{e}
+                <p>{e}
                     <img src={iconArrowDown} alt="iconArrow"/>
-                </ul>
+                </p>
             )}
-            <div>
-                {ProductoList.map((Pli)=> <li>{Pli}</li>)}
-            </div>
-            <div>
-                {CompanyList.map((Cli)=> <li>{Cli}</li>)}
-            </div>
-            <div>
-                {ConnectList.map((Conli)=> <li>{Conli}</li>)}
-            </div>
+            <ul className="Prodlist">
+                {ProductoList.map((Pli)=> <li key={Pli}>{Pli}</li>)}
+            </ul>
+            <ul className="CompList">
+                {CompanyList.map((Cli)=> <li key={Cli}>{Cli}</li>)}
+            </ul>
+            <ul className="ConnecList">
+                {ConnectList.map((Conli)=> <li key={Conli}>{Conli}</li>)}
+            </ul>
             
         </nav>
         
