@@ -1,0 +1,116 @@
+/*ESTILOS DE LA SECTION 1*/
+.section-1{
+    border: 2px solid rgb(196, 49, 49);/*tmp*/
+    padding: 2rem;
+    overflow: hidden;
+}
+.section-1 h2{
+    border: 2px solid rgb(81, 196, 49);/*tmp*/
+    text-align: center;
+    margin: 2rem;
+    font-size: 3rem;
+    color: var(--VerydarkGrayishBlue);
+}
+.section-1 .container-info{
+    border: 2px solid rgb(49, 61, 196);/*tmp*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-1 .container_desc{
+    border: 2px solid rgb(196, 164, 49);/*tmp*/
+    padding: 3rem;
+    position: relative;
+    bottom: 6rem;
+}
+.box-info{
+    border: 2px solid rgb(135, 196, 49);/*tmp*/
+    margin: 1rem;
+}
+.box-info h3{
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: var(--VerydarkGrayishBlue);
+    font-family: 'Overpass', sans-serif;
+}
+.box-info p{
+    margin: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.section-1 .container-img{
+    width: 45%;
+    position: relative;
+    bottom: 8rem;
+}
+/*ESTILOS DE LA SECTION 2*/
+.section-2{
+    border: 2px solid rgb(46, 55, 91);/*tmp*/
+    color: var(--WhiteTxt);
+    height: 30rem;
+}
+.container-bgCircle_info{
+    border: 2px solid rgb(213, 213, 213);/*tmp*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(90deg, var(--Verydarkgrayblue), var(--Verydarkdesaturatedblue));
+    border-bottom-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+    height: 25rem;
+}
+.bgCircle{
+    position: relative;
+    bottom: 16rem;
+    right: 14rem;
+}
+.info{
+    border: 2px solid wheat;/*tmp*/
+    position: relative;
+    right: 20rem;
+}
+.info h2{
+    font-size: 1.9rem;
+    margin: 0 0 2rem 0;
+}
+.info p{
+    font-size: 1.2rem;
+}
+.container-bgPhones{
+    position: relative;
+    left: 5rem;
+    bottom: 30rem;
+}
+/*ESTILOS DE LA SECTION 3*/
+.section-3{
+    border: 2px solid  darkgreen;/*tmp*/
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+.container-img-s3{
+    border: 2px solid  rgb(18, 0, 100);/*tmp*/
+    position: relative;
+    right: 18rem;
+}
+.container-description{
+    border: 2px solid  rgb(100, 52, 0);/*tmp*/
+    position: relative;
+    right: 10rem;
+}
+.container-description h3,.container-description p{
+    border: 2px solid  rgb(232, 140, 41);/*tmp*/
+    margin: 1rem;
+}
+.container-description h3{
+    font-size: 1.5rem;
+    color: var(--Verydarkgrayblue);
+}
+.container-description p{
+    font-size: 1rem;
+    color: var(--VerydarkGrayishBlue);
+    font-family: 'Ubuntu', sans-serif;
+}
