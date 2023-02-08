@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import './App.css';
+@import './css/Main/Icons.css';
+@import './css/Main/Info.css';
+:root{
+    --GradientL: hsl(6, 100%, 80%);
+    --GradientR:hsl(335, 100%, 65%);
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+    --font-family: 'Raleway', sans-serif;
+}
