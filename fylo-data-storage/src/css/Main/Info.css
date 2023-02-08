@@ -1,0 +1,95 @@
+.containerInfo{
+    width: 30rem;
+    background: var(--Dark-Blue);
+    color: var(--Pale-Blue);
+    padding: 2rem;
+    height: 9rem;
+    font-size: 14px;
+}
+.storage{
+    margin: 1rem auto;
+    height: 1rem;
+    background: var(--Very-Dark-Blue);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.valueStorage{
+    width: 80%;
+    background-image: linear-gradient(90deg, var(--GradientL), var(--GradientR));
+    height: inherit;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Circle{
+    background: var(--Pale-Blue);
+    margin: .1rem;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.range{
+    display: flex;
+    justify-content: space-between;
+}
+.containerTooltip{
+    position: relative;
+    bottom: 9.5rem;
+    left: 16.5rem;
+}
+.tooltip{
+    width: 10rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    padding: 1rem;
+    background: white;
+    color: var(--Grayish-Blue);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tooltip b{
+    color: var(--Very-Dark-Blue);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 30px solid white;
+    border-bottom: 30px solid transparent;
+}
+@media (max-width: 940px) {
+    .containerTooltip{
+        position: initial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .triangle{
+        display: none;
+    }
+}
+@media (max-width: 376px) {
+    .containerInfo{
+        width: 95%
+    }
+}
