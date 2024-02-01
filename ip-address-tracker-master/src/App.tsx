@@ -1,10 +1,15 @@
-import './App.css'
+import "./App.css";
+import { ContainerMap } from "./assets/styles/MapStyles";
+import Header from "./components/Header/Header";
 
 function App() {
-
+  
   return (
-      <h1>Vite + React</h1>
-  )
+    <>
+      <Header  />
+      <ContainerMap id="map"></ContainerMap>
+    </>
+  );
 }
 
 export default App;
