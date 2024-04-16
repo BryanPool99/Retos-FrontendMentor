@@ -1,0 +1,13 @@
+<section class="box-summary">
+    <h3 class="title-h3 color-dark-gray-blue">Summary</h3>
+    <aside class="box-categories">
+        <div class="container-summanry" *ngFor="let item of data"  [ngStyle]="{ 'color': getColor(item.category), 'background-color': getBackgroundColor(item.category) }">
+            <div class="container-category">
+                <img class="icon" [src]="item.icon" alt="{{ item.category }} Icon">
+                <p class="category-name">{{ item.category }}</p>
+            </div>
+            <div class="number-fraccion"><span class="color-dark-gray-blue">{{ item.score }}</span>/<span>100</span></div>
+        </div>
+    </aside>
+    <button class="btn-continue">Continue</button>
+</section>
