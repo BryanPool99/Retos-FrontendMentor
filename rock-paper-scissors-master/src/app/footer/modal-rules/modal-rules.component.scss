@@ -1,0 +1,22 @@
+.header-dialog{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        margin: 0;
+        font-size: 1.5rem;
+        color: hsl(229, 25%, 31%);
+        letter-spacing: 2px;
+    }
+    button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+.container-image-rule{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,22 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 90vh;
+
+    app-header {
+        border: hsl(217, 16%, 45%) 2px solid;
+        border-radius: 1rem;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    app-footer {
+        display: flex;
+        width: 90%;
+        flex-direction: row-reverse;
+    }
+}

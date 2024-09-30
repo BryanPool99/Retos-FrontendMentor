@@ -1,0 +1,12 @@
+<div [ngSwitch]="isBasicGame">
+    <ng-container *ngSwitchCase="true">
+        <img src="../../assets/images/logo.svg" alt="logo">
+      </ng-container>
+      <ng-container *ngSwitchCase="false">
+        <img src="../../assets/images/logo-bonus.svg" alt="logo-bonus">
+      </ng-container>
+</div>
+<div class="container-score">
+    <p>SCORE</p>
+    <h1>{{score}}</h1>
+</div>

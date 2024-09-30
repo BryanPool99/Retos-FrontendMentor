@@ -1,0 +1,14 @@
+<div class="header-dialog">
+    <h2>RULES</h2>
+    <button mat-icon-button (click)="cerrarModal()" aria-label="Cerrar">
+        <img src="../../../assets/images/icon-close.svg" alt="icon-close">
+    </button>
+</div>
+<div class="container-image-rule" mat-dialog-content [ngSwitch]="isBasicGame">
+    <ng-container *ngSwitchCase="true">
+        <img src="../../../assets/images/image-rules.svg" alt="rules">
+    </ng-container>
+    <ng-container *ngSwitchCase="false">
+        <img src="../../../assets/images/image-rules-bonus.svg" alt="rules-bonus">
+    </ng-container>
+</div>
