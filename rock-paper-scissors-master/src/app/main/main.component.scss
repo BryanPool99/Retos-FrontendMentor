@@ -1,0 +1,148 @@
+main {
+    width: 20rem;
+    background: url("../../assets/images/bg-triangle.svg") no-repeat;
+
+    &.hide-background {
+        background: none;
+        width: 50%;
+        display: flex;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        position: relative;
+        top: -3rem;
+
+        .card {
+            display: flex;
+            padding: 2rem;
+            border-radius: 50%;
+            width: 5rem;
+            height: 5rem;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .results-container {
+        border: 2px solid rgb(128, 26, 0);
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+
+        .result {
+            width: 15rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+
+            h3 {
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 1.5rem;
+                font-family: "Barlow Semi Condensed", sans-serif;
+                font-weight: 600;
+            }
+
+            .card {
+                scale: 1.5;
+                display: flex;
+                padding: 2rem;
+                border-radius: 50%;
+                width: 5rem;
+                height: 5rem;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .card-winner {
+                position: relative;
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 0 0.5rem hsla(217, 16%, 45%, 0.5),
+                    /* Primera onda */
+                    0 0 0 1.5rem hsl(217, 16%, 45%, 0.3),
+                    /* Segunda onda */
+                    0 0 0 2.5rem hsl(217, 16%, 45%, 0.2);
+                /* Tercera onda */
+                animation: ripple 1.5s infinite;
+                /* Añadimos la animación de ondas */
+            }
+
+            @keyframes ripple {
+                0% {
+                    box-shadow: 0 0 0 0.5rem hsla(217, 16%, 45%, 0.5),
+                        0 0 0 1.5rem hsl(217, 16%, 45%, 0.3),
+                        0 0 0 2.5rem hsl(217, 16%, 45%, 0.2);
+                }
+
+                100% {
+                    box-shadow: 0 0 0 1rem hsl(217, 16%, 45%, 0.5),
+                        0 0 0 2.5rem hsl(217, 16%, 45%, 0.3),
+                        0 0 0 4rem hsl(217, 16%, 45%, 0.2);
+                }
+            }
+
+            .card-loading {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                width: 2.5rem;
+                height: 2.5rem;
+                padding: 3.3rem;
+                border: none;
+                background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+            }
+        }
+
+        .container-result-final {
+            border: 2px solid grey;
+            width: 15rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            h2 {
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 3.5rem;
+                font-family: "Barlow Semi Condensed", sans-serif;
+                font-weight: 600;
+            }
+
+            .btn-reset-game {
+                font-size: 1.5rem;
+                font-family: "Barlow Semi Condensed", sans-serif;
+                font-weight: 600;
+                border: none;
+                background: #fff;
+                color: hsl(229, 25%, 31%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 15px;
+                border-radius: 10px;
+                cursor: pointer;
+                text-transform: uppercase;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    scale: 1.2;
+                    color: hsl(349, 71%, 52%);
+                }
+            }
+        }
+    }
+}

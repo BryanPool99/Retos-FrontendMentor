@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ScoreService } from '../service/score.service';
 
 @Component({
   selector: 'app-header',
@@ -9,13 +10,14 @@ export class HeaderComponent implements OnInit {
   @Input() isBasicGame: boolean = false;
   score: number = 0
 
-  constructor() { }
+  constructor(private scoreService: ScoreService) { }
 
   ngOnInit() {
     console.log("INICIANDO COMPONENTE DE CONTADOR");
-    console.log("El juego esta en mdo basico?", this.isBasicGame);
-  }
-  incrementar() {
-    this.score++;
+    this.scoreService.score$.subscribe((score: number) => {
+      this.score = score;
+    });
+    console.log("SCORE:",this.score);
+    
   }
 }

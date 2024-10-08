@@ -9,20 +9,23 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { ModalRulesComponent } from './footer/modal-rules/modal-rules.component';
 import { MaterialModule } from './material/material.module';
-
+import { CardIconComponent } from './main/card-icon/card-icon.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    ModalRulesComponent
+    ModalRulesComponent,
+    CardIconComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

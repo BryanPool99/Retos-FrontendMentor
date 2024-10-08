@@ -1,0 +1,17 @@
+.container-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 3.3rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease; // Suaviza la rotación
+
+    &:hover {
+        transform: rotate(360deg);  // Gira el círculo completamente
+        scale: 1.5;
+    }
+}

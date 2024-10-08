@@ -14,7 +14,6 @@ export class ModalRulesComponent implements OnInit{
   ) {}
 
   ngOnInit() {
-    console.log("INICIANDO COMPONENTE DE CONTADOR");
     this.isBasicGame=this.data.isBasicGame;
   }
 

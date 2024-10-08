@@ -1,7 +1,7 @@
 button.btn-dialog-rule{
     border: hsl(217, 16%, 45%) 2px solid;
     background: transparent;
-    color: white;
+    color: #FFF;
     text-transform: uppercase;
     width: 7rem;
     padding: 10px;
@@ -9,4 +9,10 @@ button.btn-dialog-rule{
     letter-spacing: 3px;
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: hsl(217, 16%, 45%);
+        background: #FFF;
+    }
 }
