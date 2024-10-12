@@ -14,8 +14,11 @@ export class FooterComponent {
   constructor(public dialog: MatDialog){}
 
   verReglas() {
+    const isMobile = window.innerWidth <= 500;
     const dialogRef = this.dialog.open(ModalRulesComponent,{
-      width:'400px',
+      width: isMobile ? '100vw' : '400px',
+      height: isMobile ? '100vh' : 'auto',
+      panelClass: 'custom-dialog', // Añade tu clase personalizada
       disableClose: true,
       data:{
         isBasicGame:this.isBasicGame

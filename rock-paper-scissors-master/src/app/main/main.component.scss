@@ -4,8 +4,11 @@ main {
 
     &.hide-background {
         background: none;
-        width: 50%;
+        width: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
     }
 
     .card-container {
@@ -28,10 +31,13 @@ main {
     }
 
     .results-container {
-        border: 2px solid rgb(128, 26, 0);
         display: flex;
         justify-content: space-between;
         gap: 5rem;
+
+        @media (max-width: 1024px) {
+            gap: 0rem;
+        }
 
         .result {
             width: 15rem;
@@ -40,12 +46,22 @@ main {
             align-items: center;
             gap: 3rem;
 
+            @media (max-width: 500px) {
+                flex-direction: column-reverse;
+                width: 45vw;
+            }
+
             h3 {
                 text-transform: uppercase;
                 color: #fff;
                 font-size: 1.5rem;
                 font-family: "Barlow Semi Condensed", sans-serif;
                 font-weight: 600;
+
+                @media (max-width: 500px) {
+                    font-size: 1rem;
+
+                }
             }
 
             .card {
@@ -57,12 +73,14 @@ main {
                 height: 5rem;
                 align-items: center;
                 justify-content: center;
+
+                @media (max-width: 500px) {
+                    scale: 1;
+                }
             }
 
             .card-winner {
                 position: relative;
-                width: 10rem;
-                height: 10rem;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
@@ -104,45 +122,20 @@ main {
             }
         }
 
-        .container-result-final {
-            border: 2px solid grey;
-            width: 15rem;
+        app-result-display.result-display-desk {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
 
-            h2 {
-                text-transform: uppercase;
-                color: #fff;
-                font-size: 3.5rem;
-                font-family: "Barlow Semi Condensed", sans-serif;
-                font-weight: 600;
+            @media (max-width: 700px) {
+                display: none;
             }
+        }
+    }
 
-            .btn-reset-game {
-                font-size: 1.5rem;
-                font-family: "Barlow Semi Condensed", sans-serif;
-                font-weight: 600;
-                border: none;
-                background: #fff;
-                color: hsl(229, 25%, 31%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                padding: 15px;
-                border-radius: 10px;
-                cursor: pointer;
-                text-transform: uppercase;
-                transition: all 0.5s ease;
+    app-result-display.result-display-mobile {
+        display: none;
 
-                &:hover {
-                    scale: 1.2;
-                    color: hsl(349, 71%, 52%);
-                }
-            }
+        @media (max-width: 700px) {
+            display: flex;
         }
     }
 }

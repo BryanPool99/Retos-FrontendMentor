@@ -11,6 +11,7 @@ import { ModalRulesComponent } from './footer/modal-rules/modal-rules.component'
 import { MaterialModule } from './material/material.module';
 import { CardIconComponent } from './main/card-icon/card-icon.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ResultDisplayComponent } from './main/result-display/result-display.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     MainComponent,
     ModalRulesComponent,
-    CardIconComponent
+    CardIconComponent,
+    ResultDisplayComponent
   ],
   imports: [
     BrowserModule,

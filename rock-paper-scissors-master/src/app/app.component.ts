@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Card } from './constants/game-constants';
 
 @Component({
   selector: 'app-root',

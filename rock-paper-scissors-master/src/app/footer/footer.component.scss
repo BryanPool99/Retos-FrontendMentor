@@ -1,4 +1,4 @@
-button.btn-dialog-rule{
+button.btn-dialog-rule {
     border: hsl(217, 16%, 45%) 2px solid;
     background: transparent;
     color: #FFF;
@@ -16,3 +16,28 @@ button.btn-dialog-rule{
         background: #FFF;
     }
 }
+// styles.scss
+.custom-dialog {
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+ 
+    .mat-dialog-content {
+        padding: 0;
+    }
+ }
+ 
+ .cdk-overlay-pane.custom-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    z-index: 1000; // Asegúrate de que esté por encima
+ }
+ 

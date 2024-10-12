@@ -1,17 +1,8 @@
 <main [ngClass]="{ 'hide-background': selectedCard }">
   <div class="card-container" *ngIf="!selectedCard">
-    <div
-      *ngFor="let card of cards"
-      class="card"
-      [ngStyle]="{ background: card.borderColor }"
-    >
-      <app-card-icon
-        [imageUrl]="card.imageUrl"
-        [backgroundColor]="card.backgroundColor"
-        [borderColor]="card.borderColor"
-        [altText]="card.altText"
-        (iconClick)="handleIconClick(card)"
-      >
+    <div *ngFor="let card of cards" class="card" [ngStyle]="{ background: card.borderColor }">
+      <app-card-icon [imageUrl]="card.imageUrl" [backgroundColor]="card.backgroundColor"
+        [borderColor]="card.borderColor" [altText]="card.altText" (iconClick)="handleIconClick(card)">
       </app-card-icon>
     </div>
   </div>
@@ -19,33 +10,24 @@
   <div class="results-container" *ngIf="selectedCard">
     <div class="result">
       <h3>You picked</h3>
-      <div class="card" [ngClass]="{'card-winner': winner === 'You win'}" [ngStyle]="{ background: selectedCard.borderColor }">
-        <app-card-icon
-          [imageUrl]="selectedCard.imageUrl"
-          [backgroundColor]="selectedCard.backgroundColor"
-          [borderColor]="selectedCard.borderColor"
-          [altText]="selectedCard.altText"
-        >
+      <div class="card" [ngClass]="{'card-winner': winner === 'You win'}"
+        [ngStyle]="{ background: selectedCard.borderColor }">
+        <app-card-icon [imageUrl]="selectedCard.imageUrl" [backgroundColor]="selectedCard.backgroundColor"
+          [borderColor]="selectedCard.borderColor" [altText]="selectedCard.altText">
         </app-card-icon>
       </div>
     </div>
 
-    <div class="container-result-final" *ngIf="winner">
-      <h2>{{ winner }}</h2>
-      <button class="btn-reset-game" *ngIf="houseCard && selectedCard" (click)="restartGame()">
-        Play Again
-      </button>
-    </div>
+    <app-result-display class="result-display-desk" [winner]="winner" [houseCard]="houseCard" [selectedCard]="selectedCard"
+    [restartGame]="restartGame.bind(this)">
+    </app-result-display>
 
     <div class="result" *ngIf="houseCard">
       <h3>The house picked</h3>
-      <div class="card" [ngClass]="{'card-winner': winner === 'You lose'}"  [ngStyle]="{ background: houseCard.borderColor }">
-        <app-card-icon
-          [imageUrl]="houseCard.imageUrl"
-          [backgroundColor]="houseCard.backgroundColor"
-          [borderColor]="houseCard.borderColor"
-          [altText]="houseCard.altText"
-        >
+      <div class="card" [ngClass]="{'card-winner': winner === 'You lose'}"
+        [ngStyle]="{ background: houseCard.borderColor }">
+        <app-card-icon [imageUrl]="houseCard.imageUrl" [backgroundColor]="houseCard.backgroundColor"
+          [borderColor]="houseCard.borderColor" [altText]="houseCard.altText">
         </app-card-icon>
       </div>
     </div>
@@ -55,4 +37,11 @@
       <div class="card-loading"></div>
     </div>
   </div>
+
+  <app-result-display class="result-display-mobile"
+    [winner]="winner"
+    [houseCard]="houseCard"
+    [selectedCard]="selectedCard"
+    [restartGame]="restartGame.bind(this)">
+  </app-result-display>
 </main>

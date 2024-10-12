@@ -17,7 +17,6 @@ export class ModalRulesComponent implements OnInit{
     this.isBasicGame=this.data.isBasicGame;
   }
 
-
   cerrarModal(){
     this.dialogRef.close();
   }

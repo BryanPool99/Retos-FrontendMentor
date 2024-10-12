@@ -1,0 +1,6 @@
+<div class="container-result-final" *ngIf="winner">
+    <h2>{{ winner }}</h2>
+    <button class="btn-reset-game" *ngIf="houseCard && selectedCard" (click)="restartGame()">
+        Play Again
+    </button>
+</div>
